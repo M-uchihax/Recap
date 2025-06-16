@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+</head>
+<body>
+    <h1>Uchiha Academy Student Portal</h1>
+    [<a href="#about" title="Brief information About the School">About</a> | <a href="#table" title="A summary of the students score">Students Table</a> | <a href="#form" title="Register there">Registration Form</a> | <a href="#contact">Contact</a>]
+    <h2 id="about">ABOUT</h2>
+    <p>
+        Uchiha Academy is a modern learning platform dedicated<br>
+        to nurturing the next generation of elite students in<br> 
+        academics and discipline. With a strong focus on technology,<br>
+        leadership, and innovation, we provide a dynamic environment<br>
+        where students thrive through quality education and<br>
+        real-world projects.
+    </p>
+    <img src="images/R.jpg" width="400px" height="300px" alt="School image">
+    <img src="images/OIP.jpg" width="400px" height="300px" alt="School image">
+    <br>
+
+    <h2>TABLE</h2>
+    <table border="1" id="table">
+        <thead>
+            <caption>Students Table</caption>
+            <tr>
+                <th scope="row">Student Name</th>
+                <th scope="row">Subject</th>
+                <th scope="row">Score</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td rowspan="2">Sasuke</td>
+                <td>Maths</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>Itachi</td>
+                <td>Chemistry</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Obito</td>
+                <td>History</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Madara</td>
+                <td>Philosopy</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>Battle Tactics</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">This is the end of the table</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+
+    <h2>Registration Form</h2>
+    <form action="https://formsubmit.co/yusufadamsadiq7@gmail.com" method="post" enctype="multipart/form-data" autocomplete="on">
+        <input type="hidden" name="_next" value="thank you.html">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="You have successfull submit your form, you will be admitted shortly">
+        <input type="hidden" name="_subject" value="New Student">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="Source_Page" value="Students Form">
+        <fieldset>
+                <legend>Personal Info</legend>
+            <label>
+                Full Name: <input type="text" name="name" autocomplete="name" placeholder="Enter Full Name" maxlength="40" required>
+            </label>
+            <br>
+            <label>
+                Email: <input type="email" name="email" placeholder="Enter Email" autocomplete="email" required>
+            </label>
+            <br>
+            <label>
+                Phone Number: <input type="tel" pattern="^(?:\+234|234|0)(7[0-9]|8[0-9]|9[0-9])[0-9]{7}$" name="tel" autocomplete="tel" placeholder="enter Phone number" required>
+            </label>
+            <br>
+            Gender: 
+            <label>
+            <input type="radio" name="Gender" value="Male">Male
+            </label>
+            <label>
+            <input type="radio" name="Gender" value="Female">Female
+            </label>
+        </fieldset>
+        <br>
+        Subjects:
+        <label>
+            <input type="checkbox" name="Subjects[]" value="English">English
+        </label>     
+        <label>
+            <input type="checkbox" name="Subjects[]" value="Mathematics">Mathematics
+        </label>
+        <label>
+            <input type="checkbox" name="Subjects[]" value="Physics">Physics
+        </label>
+        <label>
+            <input type="checkbox" name="Subjects[]" value="Chemistry">Chemistry
+        </label>  
+        <label>
+            <input type="checkbox" name="Subjects[]" value="Biology">Biology
+        </label>
+        <br>
+        Class:
+        <select name="Class">
+            <option name="Class" value="" disabled selected><---Choose Class---></option>
+            <option name="Class" value="Jss 1">Jss 1</option>
+            <option name="Class" value="Jss 2">Jss 2</option>
+            <option name="Class" value="Jss 3">Jss 3</option>
+            <option name="Class" value="Sss 1">Sss 1</option>
+            <option name="Class" value="Sss 2">Sss 2</option>
+            <option name="Class" value="Sss 3">Sss 3</option>
+        </select>
+        <br>
+        Student Bio:
+        <br>
+        <textarea name="Bio" cols="30" rows="8"></textarea>
+        <br>
+        Document Upload:
+        <br>
+        Profile Picture:<br>
+        <input type="file" accept="Image/*">
+        <br>
+        Cv:<br>
+        <input type="file" accept=".doc,.docx">
+        <input type="Submit" value="Resigter">        
+    </form>
+</body>
+</html>
